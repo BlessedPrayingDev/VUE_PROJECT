@@ -28,14 +28,38 @@
               // Vue 객체가 관리할 HTML 태그 객체가 할당 된 후
               mounted : function () {
                   console.log("Vue 객체가 관리할 태그가 할당 된 이후 입니다.")
+              },
+              beforeUpdate : function () {
+                  console.log("관리하고 있는 HTML 요소 내부가 변경되기 전입니다.")
+              },
+              updated : function () {
+                  console.log("관리하고 있는 HTML 요소 내부가 변경된 후 입니다.")
+              },
+              beforeDestroy : function () {
+                  console.log("Vue 객체의 기능이 소멸되기 전입니다.")
+              },
+              destroyed : function () {
+                  console.log("Vue 객채의 기능이 소멸된 후 입니다.")
+              },
+              methods : {
+                  setValue : function () {
+                      this.a1 = 200;
+                  }
               }
           });
+
+          // vm1.$mount('#test1');
+          // Vue 객체에 마운트 된 태그를 관리하는 요소를 소멸시킨다.
+          vm1.$destroy()
+          // Vue 객체의 태그를 할당한다.
+          vm1.$mount('#test1')
       }
   </script>
 </head>
 <body>
   <div id="test1">
     <h3>{{a1}}</h3>
+    <button type="button" v-on:click="setValue">값 변경</button>
   </div>
 </body>
 </html>
