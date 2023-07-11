@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+  <script>
+    window.onload = function () {
+        var vm1 = new Vue({
+            el : '#test1',
+            data : {
+                a1 : 100,
+                a2 : 200
+            },
+            methods : {
+                test_method : function () {
+                    console.log('test method')
+                    return this.a1 + this.a2
+                },
+                setValue : function () {
+                    this.a1 = 1000
+                    this.a2 = 2000
+                },
+                getRandomMethod : function () {
+                    return Math.random()
+                }
+            },
+            computed : {
+                test_computed : function () {
+                    console.log('test computed')
+                    return this.a1 + this.a2
+                },
+                getRandomComputed : function () {
+                    return Math.random()
+                }
+            }
+        })
+    }
+  </script>
+</head>
+<body>
+  <div id="test1">
+    <h3>a1 : {{a1}}</h3>
+    <h3>a2 : {{a2}}</h3>
+    <h3>a1 + a2 : {{a1 + a2}}</h3>
+    <h3>test method : {{test_method()}}</h3>
+    <h3>test method : {{test_method()}}</h3>
+    <h3>test method : {{test_method()}}</h3>
+<!--    <h3>test computed : {{test_computed()}}</h3>-->
+<!--    <h3>test computed : {{test_computed()}}</h3>-->
+<!--    <h3>test computed : {{test_computed()}}</h3>-->
+
+    <button type="button" v-on:click="setValue">값 변경</button>
+
+    <h3>get random method : {{getRandomMethod()}}</h3>
+    <h3>get random method : {{getRandomMethod()}}</h3>
+    <h3>get random method : {{getRandomMethod()}}</h3>
+
+<!--    <h3>get random computed : {{getRandomComputed()}}</h3>-->
+<!--    <h3>get random computed : {{getRandomComputed()}}</h3>-->
+<!--    <h3>get random computed : {{getRandomComputed()}}</h3>-->
+  </div>
+</body>
+</html>
