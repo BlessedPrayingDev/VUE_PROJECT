@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c58ba5c9-fa4b-444c-8009-3b64f3c6823f" name="Changes" comment="Vue 온라인학습 속성값 바인딩" />
+    <list default="true" id="42ba141b-48cf-47cf-9c52-289b98ded806" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AttributeBind/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AttributeBind/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2SSKr9a079bn9TdeFyQ5iNe69Ix" />
+  <component name="ProjectId" id="2SSMg7rLGb0vQoSWp3pLeU13bOA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,7 +38,6 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -41,41 +48,28 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/AttributeBind/AttributeBind/src/main/webapp/index.html" useBuiltInWebServerPort="true">
+    <configuration name="index.htmlk.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/CSSClassBinding/CSSClassBinding/src/main/webapp/index.htmlk.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.index.htmlk.html" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c58ba5c9-fa4b-444c-8009-3b64f3c6823f" name="Changes" comment="" />
-      <created>1689134739631</created>
+      <changelist id="42ba141b-48cf-47cf-9c52-289b98ded806" name="Changes" comment="" />
+      <created>1689135639553</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1689134739631</updated>
-      <workItem from="1689134740635" duration="898000" />
+      <updated>1689135639553</updated>
+      <workItem from="1689135640581" duration="981000" />
     </task>
-    <task id="LOCAL-00001" summary="Vue 온라인학습 속성값 바인딩">
-      <option name="closed" value="true" />
-      <created>1689135521502</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1689135521502</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vue 온라인학습 속성값 바인딩" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vue 온라인학습 속성값 바인딩" />
   </component>
 </project>
