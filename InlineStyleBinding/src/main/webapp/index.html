@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+  <script>
+    window.onload = function () {
+        var vm1 = new Vue({
+            el : '#test1',
+            data : {
+                bgcolorValue : 'red',
+                colorValue : 'yellow',
+                styleValue : {
+                    backgroundColor : 'red',
+                    color : 'yellow'
+                }
+            },
+            methods : {
+                setInlineStyle : function () {
+                    this.bgcolorValue = 'yellow'
+                    this.colorValue = 'red'
+                },
+                setStyleValue : function () {
+                    this.styleValue = {
+                        backgroundColor: 'yellow',
+                        color: 'red'
+                    }
+                }
+            }
+        })
+    }
+  </script>
+</head>
+<body>
+  <div id="test1">
+    <h3 style="background-color: red; color: yellow">문자열</h3>
+    <h3 v-bind:style="{backgroundColor:bgcolorValue, color:colorValue}">문자열</h3>
+    <button type="button" v-on:click="setStyleValue">inline css 변경</button>
+
+    <h3 v-bind:style="styleValue">문자열</h3>
+  </div>
+</body>
+</html>
