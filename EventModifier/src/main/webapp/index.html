@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .box {
+        width : 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+  <script>
+    window.onload = function () {
+        var vm1 = new Vue({
+            el : '#test1',
+            data : {
+
+            },
+            methods : {
+              method1 : function () {
+                  alert("method1")
+              },
+              method2 : function () {
+                  alert("method2")
+              }
+            }
+        })
+    }
+  </script>
+</head>
+<body>
+  <div id="test1">
+    <div @click="method1" class="box">
+      <button type="button" @click="method2">버튼</button>
+      <button type="button" @click.stop="method2">버튼</button>
+    </div>
+
+    <a @click.prevent href="http://www.softcampus.co.kr">softcampus</a>
+    <a @click="method1" href="http://www.softcampus.co.kr">softcampus</a>
+    <a @click.prevent="method1" href="http://www.softcampus.co.kr">softcampus</a>
+
+    <div @click.capture="method1" class="box">
+      <button type="button" @click="method2">버튼</button>
+    </div>
+
+    <div @click.self="method1" class="box">
+      <button type="button" @click="method2">버튼</button>
+      <button type="button" @click="method2">버튼</button>
+    </div>
+
+    <div @click.once="method1" class="box">
+
+    </div>
+  </div>
+</body>
+</html>
