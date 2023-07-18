@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10"></script>
+  <script>
+    window.onload = function () {
+        var vm1 = new Vue({
+            el : '#test1',
+            data : {
+                a1 : 100,
+                a2 : 100,
+                a3 : 100,
+                a4 : 100,
+                a5 : 100,
+                a6 : 100,
+                a7 : 100
+            },
+            methods : {
+                setA1 : function () {
+                    if(this.a1 == 100) {
+                        this.a1 = 200
+                    } else {
+                        this.a1 = 100
+                    }
+                },
+                setA2 : function () {
+                    if(this.a2 == 100) {
+                        this.a2 = 200
+                    } else {
+                        this.a2 = 100
+                    }
+                },
+                setA3 : function () {
+                    if(this.a3 == 100) {
+                        this.a3 = 200
+                    } else {
+                        this.a3 = 100
+                    }
+                },
+                setA4 : function () {
+                    if(this.a4 == 100) {
+                        this.a4 = 200
+                    } else {
+                        this.a4 = 100
+                    }
+                },
+                setA5 : function () {
+                    if(this.a5 == 100) {
+                        this.a5 = 200
+                    } else if(this.a5 == 200) {
+                        this.a5 = 300
+                    } else {
+                        this.a5 = 100
+                    }
+                },
+                setA6 : function () {
+                    if(this.a6 == 100) {
+                        this.a6 = 200
+                    } else {
+                        this.a6 = 100
+                    }
+                },
+                setA7 : function () {
+                    if(this.a7 == 100) {
+                        this.a7 = 200
+                    } else {
+                        this.a7 = 100
+                    }
+                }
+            }
+        })
+    }
+  </script>
+</head>
+<body>
+  <div id="test1">
+    <h3 v-if="a1 == 100">a1은 100입니다.</h3>
+    <h3 v-if="a1 == 200">a1은 200입니다.</h3>
+    <button type="button" @click="setA1">a1셋팅</button>
+    <hr />
+
+    <h3 v-if="a2 == 100">a2는 100입니다</h3>
+    <h3 v-else>a2는 100이 아닙니다</h3>
+    <button type="button" @click="setA2">a2 셋팅</button>
+    <hr />
+
+    <div v-if="a3 == 100">
+      <h3>a3는 100입니다</h3>
+      <h3>a3는 100입니다</h3>
+      <h3>a3는 100입니다</h3>
+    </div>
+    <div v-else>
+      <h3>a3는 100이 아닙니다</h3>
+      <h3>a3는 100이 아닙니다</h3>
+      <h3>a3는 100이 아닙니다</h3>
+    </div>
+    <button type="button" @click="setA3">a3 셋팅</button>
+    <hr />
+
+    <template v-if="a4 == 100">
+      <h3>a4는 100입니다</h3>
+      <h3>a4는 100입니다</h3>
+      <h3>a4는 100입니다</h3>
+    </template>
+    <template v-else>
+      <h3>a4는 100이 아닙니다</h3>
+      <h3>a4는 100이 아닙니다</h3>
+      <h3>a4는 100이 아닙니다</h3>
+    </template>
+    <button type="button" @click="setA4">a4 셋팅</button>
+
+    <template v-if="a5 == 100">
+      <h3>a5는 100입니다</h3>
+    </template>
+    <template v-else-if="a5 == 200">
+      <h3>a5는 200입니다</h3>
+    </template>
+    <template v-else-if="a5 == 300">
+      <h3>a5는 300입니다</h3>
+    </template>
+    <button type="button" @click="setA5">a5 셋팅</button>
+    <hr />
+
+    <template v-if="a6 ==100">
+      <h3>data1</h3>
+      <input type="text" key="data1"/>
+    </template>
+    <template v-else>
+      <h3>data2</h3>
+      <input type="text" key="data2"/>
+    </template>
+    <button type="button" @click="setA6">a6 셋팅</button>
+
+    <h3 v-show="a7 == 100">a7은 100입니다</h3>
+    <h3 v-show="a7 != 100">a7은 100이 아닙니다</h3>
+    <button type="button" @click="setA7">a7 셋팅</button>
+  </div>
+</body>
+</html>
